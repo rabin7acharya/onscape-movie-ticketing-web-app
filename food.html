@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./food-style.css" />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      p {
+        margin: 4px;
+        font-size: 16px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      .blue {
+        color: blue;
+      }
+      .highlight {
+        background: yellow;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <div class="food-wrapper">
+      <div class="container d-flex flex-wrap mt-5">
+        <div class="food-card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="border p-3">
+            <div class="img-wrapper p-0 col-12 mb-4">
+              <img
+                src="https://i.pinimg.com/564x/1c/ef/84/1cef846b942334a2de6adf33fd66ddfe.jpg"
+                alt=""
+                class="food-img p-0 col-12"
+              />
+            </div>
+
+            <div
+              class="item-info d-flex align-items-end justify-content-between"
+            >
+              <div class="item-info-left">
+                <h5 class="mb-3">Food Item 1</h5>
+                <button class="btn pill">ADD TO CART</button>
+              </div>
+
+              <div class="item-info-right">
+                <h5 class="m-0">⭐8.5</h5>
+                <h5>$80.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="border p-3">
+            <div class="img-wrapper p-0 col-12 mb-4">
+              <img
+                src="https://i.pinimg.com/564x/1c/ef/84/1cef846b942334a2de6adf33fd66ddfe.jpg"
+                alt=""
+                class="food-img p-0 col-12"
+              />
+            </div>
+
+            <div
+              class="item-info d-flex align-items-end justify-content-between"
+            >
+              <div class="item-info-left">
+                <h5 class="mb-3">Food Item 1</h5>
+                <button class="btn pill">ADD TO CART</button>
+              </div>
+
+              <div class="item-info-right">
+                <h5 class="m-0">⭐8.5</h5>
+                <h5>$80.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="border p-3">
+            <div class="img-wrapper p-0 col-12 mb-4">
+              <img
+                src="https://i.pinimg.com/564x/1c/ef/84/1cef846b942334a2de6adf33fd66ddfe.jpg"
+                alt=""
+                class="food-img p-0 col-12"
+              />
+            </div>
+
+            <div
+              class="item-info d-flex align-items-end justify-content-between"
+            >
+              <div class="item-info-left">
+                <h5 class="mb-3">Food Item 1</h5>
+                <button class="btn pill">ADD TO CART</button>
+              </div>
+
+              <div class="item-info-right">
+                <h5 class="m-0">⭐8.5</h5>
+                <h5>$80.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="border p-3">
+            <div class="img-wrapper p-0 col-12 mb-4">
+              <img
+                src="https://i.pinimg.com/564x/1c/ef/84/1cef846b942334a2de6adf33fd66ddfe.jpg"
+                alt=""
+                class="food-img p-0 col-12"
+              />
+            </div>
+
+            <div
+              class="item-info d-flex align-items-end justify-content-between"
+            >
+              <div class="item-info-left">
+                <h5 class="mb-3">Food Item 1</h5>
+                <button class="btn pill">ADD TO CART</button>
+              </div>
+
+              <div class="item-info-right">
+                <h5 class="m-0">⭐8.5</h5>
+                <h5>$80.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="blue">Click to toggle</p>
+    <p class="blue highlight">highlight</p>
+    <p class="blue">on these</p>
+    <p class="blue">paragraphs</p>
+
+    <script>
+      $("p").click(function () {
+        $(this).toggleClass("highlight");
+      });
+    </script>
+  </body>
+</html>
