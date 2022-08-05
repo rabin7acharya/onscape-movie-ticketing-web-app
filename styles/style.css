@@ -190,15 +190,20 @@ body {
 }
 
 .ham-menu {
+  /* background-image: url(../assets/images/movie-detail-cover.jpg); */
   display: none;
-  height: 100%;
+  height: 101vh;
   background-color: var(--n-blue);
   width: 100%;
   position: absolute;
   position: fixed;
-  top: 4.5rem;
+  top: 0rem;
+  bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
+  padding-top: 3rem;
+  overflow-x: hidden;
+  position: fixed;
   /* margin-top: 0.04em; */
   /* border: 1px solid black; */
   box-shadow: 1px 1px 5px #00000044;
@@ -215,7 +220,7 @@ body {
   text-decoration: none;
   color: var(--white);
   font-size: 1.2em;
-  padding: 1em 0.5em;
+  padding: 0.5em;
 }
 
 .ham-menu ul li a:hover {
@@ -227,15 +232,13 @@ body {
 
 .ham-menu ul li {
   list-style: none;
-  margin: 1em 3em;
-  padding: 1em 3em;
-
-  /* background-color: aqua; */
+  margin: 1em;
+  padding: 1rem; /* background-color: aqua; */
 }
 
 .ham-menu-buttons {
   background-color: var(--d-blue);
-  width: 60%;
+  /* width: 60%; */
 }
 
 .movie-grid {
@@ -647,12 +650,12 @@ body {
   color: var(--border-pill);
 }
 
-.selected {
-  color: var(--green);
-}
-
 .available {
   color: var(--s-blue);
+}
+
+.selected {
+  color: var(--green);
 }
 
 .legend {

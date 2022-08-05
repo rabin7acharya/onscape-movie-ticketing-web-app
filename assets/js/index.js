@@ -43,18 +43,17 @@ $(document).ready(function () {
     $(this).siblings().css("border", "1px solid #a3b1c633");
   });
 
-  $(".available").click(function () {
-    $(this).removeClass("available");
-    $(this).toggleClass("selected");
+  $(".fa-couch").click(function () {
+    if ($(this).hasClass("booked")) {
+      alert("This seat is already booked");
+    } else if ($(this).hasClass("available")) {
+      $(this).toggleClass("selected");
+    }
   });
 
   // $(".selected").click(function () {
   //   $(this).toggleClass("available");
   // });
-
-  $(".booked").click(function () {
-    alert("This seat is already booked");
-  });
 
   // tabbed pane
   // $("#demo").rTabs();
