@@ -662,3 +662,11 @@ body {
   border: 1px solid var(--border-pill);
   font-size: 0.8em;
 }
+
+.booking-info {
+  /* background-color: var(--l-blue); */
+  border: 1px solid var(--border-pill);
+  /* background-image: url("../assets/images/movie-detail-cover.jpg"); */
+  /* background-blend-mode: luminosity; */
+  /* background-position: center; */
+}
